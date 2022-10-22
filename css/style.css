@@ -137,8 +137,8 @@
 .about_kmcsc{
 	width: 80%;
 	margin: 20px auto;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	flex-direction: row;
 	gap: 5rem;
 }
 
