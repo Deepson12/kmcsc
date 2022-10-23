@@ -1,0 +1,60 @@
+@media screen and (max-width: 1100px) {
+
+    .about_kmcsc {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .about_kmcsc_left {
+        background-color: var(--color-grey-light);
+    }
+
+    .about_kmcsc_right {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .extra_info_count {
+        gap: 15px 0px;
+    }
+
+    .extra_info_img,
+    .extra_info_img_left {
+        width: 100%;
+        flex: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .extra_info_count.left {
+        flex-direction: column-reverse;
+    }
+
+    .extra_info_count.right {
+        flex-direction: column;
+    }
+
+    .extra_info_desc,
+    .extra_info_desc_right {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .extra_info_desc_title_big h5,
+    .extra_info_desc_title_big_right h5 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .extra_info_desc_p_right,
+    .extra_info_desc_p {
+        text-align: center;
+    }
+
+    .executives_desc {
+        flex-direction: column;
+        text-align: center;
+    }
+}
