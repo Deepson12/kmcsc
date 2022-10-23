@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.uil-facebook-f, .uil-twitter, .uil-instagram, .uil-arrow-circle-right {
+  opacity: 0;
+  font-size: 18px;
+  color: #fff;
+  will-change: transform;
+  transform: scale(0.1);
+  transition: all 0.2s ease;
+}
+
+h2 {
+  pointer-events: none;
+}
+
+.events{
+  background-color: var(--color-1st-background);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.container .card {
+  position: relative;
+  width: 500px;
+  height: 200px;
+  background-color: var(--color-white);
+  overflow: hidden;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.container .card:before {
+  content: "";
+  z-index: 99;
+  position: absolute;
+  top: -10px;
+  left: 32px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #E6E5E1;
+}
+.container .card:after {
+  content: "";
+  z-index: 99;
+  position: absolute;
+  bottom: -10px;
+  left: 32px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #E6E5E1;
+}
+.container .card ul {
+  z-index: 99;
+  position: absolute;
+  left: 39px;
+  top: 5px;
+  list-style-type: none;
+}
+.container .card ul li {
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  margin: 6px 0;
+  background-color: #E6E5E1;
+}
+.container .card h2 {
+  z-index: 99;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 0;
+  right: 130px;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+}
+.container .card .uil-arrow-circle-right {
+  z-index: 100;
+  position: absolute;
+  right: 75px;
+  bottom: 25px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.container .card .card_p {
+  z-index: 99;
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  color: var(--color-dark-text);
+  opacity: 0.7;
+  font-size: 12px;
+  letter-spacing: 1px;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  transition: all 0.2s ease;
+}
+.container .card .pic {
+  z-index: 100;
+  width: 400px;
+  height: 200px;
+  background-image: url(../images/event3.jpg);
+  background-size: cover;
+  filter: grayscale(100%);
+  background-position: center;
+}
+.container .card .social {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 180px;
+  height: 64px;
+  border-radius: 80px;
+}
+.container .card .social i:nth-of-type(1) {
+  transition-delay: 0.4s;
+}
+.container .card .social i:nth-of-type(2) {
+  transition-delay: 0.3s;
+}
+.container .card .social i:nth-of-type(3) {
+  transition-delay: 0.2s;
+}
+
+.container .card:hover i {
+  opacity: 1;
+  transform: scale(1);
+}
+.container .card button {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 30px;
+  height: 30px;
+  background-color: #DA4D1D;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  mix-blend-mode: hard-light;
+}
+
+.container .card button i {
+  font-size: 3rem;
+}
+.container .card:hover button {
+  transform: scale(16.5);
+}
+.container .card:hover p {
+  color: #fff;
+}
+.container .card:hover .pic {
+  filter: grayscale(0);
+}
+.container .card2 .pic {
+  background: url(../images/event2.jpg);
+  background-size: cover;
+}
+.container .card2 button {
+  background-color: #2b26c3;
+}
+.container .card3 .pic {
+  background: url(../images/event4.jpg);
+  background-size: cover;
+}
+.container .card3 button {
+  background-color: #DA4D1D;
+}
+.container .card4 .pic {
+  background: url(../images/event1.jpg);
+  background-size: cover;
+}
+.container .card4 button {
+  background-color: #2b26c3;
+}
