@@ -1,3 +1,4 @@
+/* ? Responsiveness in the about and extra info thing */
 @media screen and (max-width: 1100px) {
 
     .about_kmcsc {
@@ -17,6 +18,22 @@
 
     .extra_info_count {
         gap: 15px 0px;
+    }
+
+    .extra_info_img {
+        flex: 2;
+        height: 16em;
+        background-color: var(--color-grey-light);
+        right: 10rem;
+        z-index: 1;
+    }
+
+    .extra_info_img_left {
+        flex: 2;
+        height: 16em;
+        background-color: var(--color-grey-light);
+        right: 10rem;
+        z-index: 1;
     }
 
     .extra_info_img,
@@ -39,6 +56,7 @@
     .extra_info_desc_right {
         align-items: center;
         justify-content: center;
+        flex: 1.7;
     }
 
     .extra_info_desc_title_big h5,
@@ -56,5 +74,24 @@
     .executives_desc {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+/* ? Change the grid format once screen is not big enough to fit a two dimensional grid */
+@media screen and (max-width: 750px) {
+    .executives_corner {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* ? Removing the text overlap effect once it starts to bug */
+@media screen and (max-width: 1260px) {
+    .extra_info_img_left {
+        margin-right: 0px;
+    }
+
+    .extra_info_img {
+        margin-left: 0px;
     }
 }
