@@ -252,19 +252,21 @@ h3 {
 }
 
 .extra_info_img {
-	flex: 2;
+	flex: 1;
 	height: 16em;
 	background-color: var(--color-grey-light);
 	right: 10rem;
 	z-index: 1;
+	margin-left: -110px;
 }
 
 .extra_info_img_left {
-	flex: 2;
+	flex: 1;
 	height: 16em;
 	background-color: var(--color-grey-light);
 	right: 10rem;
 	z-index: 1;
+	margin-right: -110px;
 }
 
 .extra_info_img_left img {
@@ -281,18 +283,20 @@ h3 {
 
 .extra_info_desc {
 	height: 15em;
-	flex: 1.7;
+	flex: 1;
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 }
 
 .extra_info_desc_right {
 	height: 15em;
-	flex: 1.7;
+	flex: 1;
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
+	align-items: flex-end;
 }
 
 .extra_info_desc_title_small {
@@ -368,12 +372,13 @@ h3 {
 	padding: 40px 20px;
 	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
-	transition: transform 0.5s;
-	transition: .5s;
+	transition: transform 250ms;
+	transition: 250ms;
 }
 
 .row:hover .col-3 {
-	filter: blur(20px);
+	filter: grayscale(100%);
+	transform: scale(0.95);
 }
 
 .testimonial .col-3 img {
@@ -383,14 +388,22 @@ h3 {
 }
 
 .testimonial .col-3:hover {
-	filter: blur(0px);
-	transform: scale(1.3);
+	filter: grayscale(0%);
+	transform: scale(1.13);
 }
 
 .testimonial .col-3 .uil-comment-alt-heart,
 .uis {
 	font-size: 34px;
 	color: var(--color-primary);
+}
+
+.uis.uis-star,
+.uis.uis-star-half-alt {
+	font-size: 34px;
+	color: var(--color-orange);
+	/*? Making the star yellow */
+	filter: hue-rotate(20deg) brightness(130%);
 }
 
 .col-3 p {
@@ -407,7 +420,7 @@ h3 {
 
 @media only screen and (max-width: 800px) {
 	.testimonial .col-3:hover {
-		transform: scale(1.1);
+		transform: scale(1.05);
 	}
 
 	.col-3 {
