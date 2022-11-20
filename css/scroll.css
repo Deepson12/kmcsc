@@ -1,12 +1,19 @@
+body {
+    scroll-behavior: smooth;
+    scroll-behavior: revert-layer;
+}
+
 .hidden {
     opacity: 0;
-    transition: all 1s ease;
+    filter: grayscale(1);
+    transition: all 1s;
     transform: translateX(var(--translate-val, 0));
     transition-delay: var(--transition-delay, 0);
 }
 
 .show {
     opacity: 1;
+    filter: grayscale(0);
     transform: translateX(0);
 }
 

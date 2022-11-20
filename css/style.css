@@ -73,13 +73,15 @@
 }
 
 .waves {
-	position: relative;
-	transform: translateY(275%);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
 	width: 100%;
 	height: 100vh;
 	margin-bottom: -7px;
 	min-height: 100px;
-	max-height: 150px;
+	max-height: 200px;
 }
 
 .waves .parallax>use {
@@ -118,8 +120,7 @@
 
 @media (max-width: 768px) {
 	.waves {
-		height: 40px;
-		min-height: 40px;
+		display: none;
 	}
 }
 
@@ -131,12 +132,6 @@
 	text-align: center;
 	color: #fff;
 	z-index: 5;
-}
-
-.wave {
-	position: relative;
-	bottom: -100%;
-	left: 0;
 }
 
 .content h1 {
@@ -182,15 +177,6 @@
 	border: 2px solid var(--color-white);
 	background: transparent;
 }
-
-
-.wave {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: 1;
-}
-
 
 .about_kmcsc {
 	padding-top: 60px;
