@@ -1,0 +1,430 @@
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-search {
+        padding: 15px 0px;
+    }
+}
+
+
+/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+    .logo {
+        text-align: center;
+    }
+    .cart-content-right {
+        padding-bottom: 5px;
+    }
+    .mg {
+        margin: 0px 0px;
+    }
+    .menu-area-main {
+        height: 256px;
+        overflow-y: auto;
+    }
+    .megamenu>.row [class*="col-"] {
+        padding: 0px;
+    }
+    .menu-area-main .megamenu .men-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .women-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .el-cat {
+        padding: 0px 15px;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        height: 19px;
+    }
+    .category-box.women-box {
+        display: none;
+    }
+    .cart-box {
+        display: inline-block;
+        margin: 0px 30px;
+    }
+    .wish-box {
+        float: none;
+        margin: 0px 30px;
+        display: inline-block;
+    }
+    .menu-add {
+        display: none;
+    }
+    .category-box {
+        display: none;
+    }
+    .mean-container .mean-nav ul li ol {
+        padding: 0px;
+    }
+    .mean-container .mean-nav ul li a {
+        padding: 10px 20px;
+        width: 94.8%;
+    }
+    .mean-container .mean-nav ul li li a {
+        width: 92%;
+        padding: 1em 4%;
+    }
+    .mean-container .mean-nav ul li li li a {
+        width: 100%;
+    }
+    .header-search {
+        padding: 15px 0px;
+    }
+    #collapseFilter.d-md-block {
+        padding: 30px 0px;
+    }
+}
+
+
+/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+    .cart-content-right {
+        padding-bottom: 5px;
+    }
+    .megamenu>.row [class*="col-"] {
+        padding: 0px;
+    }
+    .menu-area-main .megamenu .men-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .women-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .el-cat {
+        padding: 0px 15px;
+    }
+    .mean-container .mean-nav ul li a {
+        padding: 1em 4%;
+        width: 92%;
+    }
+    .mean-container .mean-nav ul li li a {
+        width: 90%;
+        padding: 1em 5%;
+    }
+    .mean-container .sub-full.megamenu-categories ol li a {
+        padding: 5px 0px;
+        text-transform: capitalize;
+        width: 100%;
+    }
+    .megamenu .sub-full.megamenu-categories .women-box .banner-up-text a {
+        width: auto;
+        border: none;
+        float: none;
+    }
+    .menu-area-main {
+        height: 45px;
+        overflow-y: auto;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        top: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+     #main_slider a.carousel-control-prev {
+        position: absolute;
+        left: 0px;
+        top: 102%;
+    }
+    #main_slider a.carousel-control-next {
+        position: absolute;
+        right: 0px;
+        top: 102%;
+    }
+.logo {
+    width: 10%;
+}
+.header_section {
+     background-size: cover;
+}
+
+.menu_text {
+    width: 5%;
+}
+.contact_menu {
+    padding-top: 5px;
+}
+.toggle_icon{ 
+    font-size:24px;
+}
+.banner_taital {
+    font-size: 70px;
+    line-height: 85px;
+}
+.banner_img {
+    height: 390px;
+}
+.services_text{
+    padding-top: 20px;
+}
+.testimonial_text{
+    padding-top: 0px;
+}
+#my_slider a.carousel-control-next {
+    right: 0px;
+    top: 25%;
+}
+#my_slider a.carousel-control-prev {
+    left: 0px;
+    top: 25%;
+}
+.number_text {
+    width: 42px;
+}
+.trusted_text {
+    font-size: 20px;
+}
+.footer_text{
+    font-size: 15px;
+}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+     #main_slider a.carousel-control-prev {
+        position: absolute;
+        left: 175px;
+        top: 90%;
+        display: none;
+    }
+    #main_slider a.carousel-control-next {
+        position: absolute;
+        left: 236px;
+        top: 90%;
+        display: none;
+    }
+.logo {
+    width: 70px;
+}
+.header_section {
+     background-size: cover;
+}
+.contact_menu{
+    display: none;
+}
+.menu_text {
+    width: 100%;
+}
+.toggle_icon{ 
+    font-size:24px;
+}
+.banner_taital {
+    font-size: 46px;
+    line-height: 55px;
+}
+.banner_img {
+    height: 305px;
+}
+.services_text{
+    padding-top: 20px;
+}
+.testimonial_text{
+    padding-top: 0px;
+}
+#my_slider a.carousel-control-next {
+    right: 0px;
+    top: 12%;
+}
+#my_slider a.carousel-control-prev {
+    left: 0px;
+    top: 12%;
+}
+.express_text{
+    padding-top: 0px;
+}
+.lorem_text {
+    font-size: 12px;
+}
+.dummy_text {
+    font-size: 12px;
+}
+.trusted_text {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.number_text {
+    height: 31px;
+    font-size: 16px;
+   padding: 3px 0px;
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #main_slider a.carousel-control-prev {
+        position: absolute;
+        left: 175px;
+        top: 90%;
+        display: none;
+    }
+    #main_slider a.carousel-control-next {
+        position: absolute;
+        left: 236px;
+        top: 90%;
+        display: none;
+    }
+    .logo {
+        width: 70px;
+    }
+    .header_section {
+        background-size: cover;
+    }
+.contact_menu{
+    display: none;
+}
+.menu_text {
+    width: 100%;
+}
+.toggle_icon{ 
+    font-size:24px;
+}
+.banner_taital {
+    width: 80%;
+    font-size: 46px;
+    line-height: 55px;
+}
+
+.banner_img{
+    margin-top: 30px;
+    height: auto;
+}
+.banner_section{
+    padding-bottom: 0px;
+}
+.services_text {
+    padding-top: 30px;
+}
+.services_section_2 {
+    padding-top: 0px;
+}
+.services_section{
+    padding-bottom: 0px;
+}
+.services_taital {
+    font-size: 27px;
+}
+#my_slider a.carousel-control-prev{
+    display: none;
+}
+#my_slider a.carousel-control-next{
+    display: none;
+}
+.client_image_section {
+    width: 100%;
+    text-align: center;
+}
+.testimonial_text {
+    padding-left: 0px;
+}
+.client_text_section {
+    width: 100%;
+}
+.testimonial_box {
+    width: 100%;
+}
+.joech_text{
+    padding-left: 0px;
+}
+.customer_text{
+    padding-left: 0px;
+}
+.useful_text{
+    padding-top: 20px;
+}
+
+
+
+}
+
+@media (max-width: 575px) {
+
+    #main_slider a.carousel-control-prev {
+        position: absolute;
+        left: 175px;
+        top: 90%;
+        display: none;
+    }
+    #main_slider a.carousel-control-next {
+        position: absolute;
+        left: 236px;
+        top: 90%;
+        display: none;
+    }
+    .logo {
+        width: 70px;
+    }
+    .header_section {
+        background-size: cover;
+    }
+.contact_menu{
+    display: none;
+}
+.menu_text {
+    width: 100%;
+}
+.toggle_icon{ 
+    font-size:24px;
+}
+.banner_taital {
+    font-size: 46px;
+    line-height: 55px;
+}
+
+.banner_img{
+    margin-top: 30px;
+    height: auto;
+}
+.banner_section{
+    padding-bottom: 0px;
+}
+.services_text {
+    padding-top: 30px;
+}
+.services_section_2 {
+    padding-top: 0px;
+}
+.services_section{
+    padding-bottom: 0px;
+}
+.services_taital {
+    font-size: 27px;
+}
+#my_slider a.carousel-control-prev{
+    display: none;
+}
+#my_slider a.carousel-control-next{
+    display: none;
+}
+.client_image_section {
+    width: 100%;
+    text-align: center;
+}
+.testimonial_text {
+    padding-left: 0px;
+}
+.client_text_section {
+    width: 100%;
+}
+.testimonial_box {
+    width: 100%;
+}
+.joech_text{
+    padding-left: 0px;
+}
+.customer_text{
+    padding-left: 0px;
+}
+.useful_text{
+    padding-top: 20px;
+}
+
+
+}

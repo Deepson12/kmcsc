@@ -30,15 +30,35 @@
 }
 
 .navbar {
-	width: 85%;
-	margin: auto;
-	padding: 35px 0;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
+	align-items: center;
+	padding: 20px 100px;
+	transition: 300ms;
 
 }
-
+.nav_container{
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav button{
+	display: none;
+}
+.navbar.sticky{
+	padding: 10px 100px;
+	background-color: var(--color-white);
+	box-shadow: 0 3px 30px #333;
+}
+.navbar.sticky ul li a{
+	color: #333;
+}
 .logo {
 	width: 85px;
 	cursor: pointer;
@@ -141,6 +161,7 @@
 	display: flex;
 	flex-direction: row;
 	gap: 5rem;
+	margin-bottom: 6rem;
 }
 
 .about_kmcsc_left {
@@ -271,12 +292,12 @@ h3 {
 
 .extra_info_img_left img {
 	float: left;
-	width: 400px;
+	width: 370px;
 	height: 100%;
 }
 
 .extra_info_img img {
-	width: 400px;
+	width: 370px;
 	height: 100%;
 	float: right;
 }

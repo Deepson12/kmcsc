@@ -75,6 +75,7 @@
         flex-direction: column;
         text-align: center;
     }
+
 }
 
 /* ? Change the grid format once screen is not big enough to fit a two dimensional grid */
@@ -82,6 +83,26 @@
     .executives_corner {
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
+    }
+    .wave{
+        display: none;
+    }
+ /* ! removing the wave due to bug */
+
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-dark-text);
+        cursor: pointer;
+        border: none;
+    }
+
+    nav button#close-menu-btn{
+        display: none;
+    }
+    .MenuItems{
+        display: none;
     }
 }
 
