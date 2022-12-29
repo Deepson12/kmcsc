@@ -38,7 +38,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 100px;
+	padding: 20px 50px;
 	transition: 300ms;
 
 }
@@ -52,12 +52,19 @@ nav button{
 	display: none;
 }
 .navbar.sticky{
-	padding: 10px 100px;
+	padding: 10px 20px;
 	background-color: var(--color-white);
-	box-shadow: 0 3px 30px #333;
+	box-shadow: 0 1px 70px #333;
 }
 .navbar.sticky ul li a{
 	color: #333;
+}
+.club-nav-a
+{
+	color: var(--color-dark-text);
+}
+.main-nav-a{
+	color: var(--color-white);
 }
 .logo {
 	width: 85px;
@@ -73,7 +80,7 @@ nav button{
 
 .navbar ul li a {
 	text-decoration: none;
-	color: var(--color-white);
+
 	font-size: 15px;
 }
 
@@ -91,7 +98,9 @@ nav button{
 .navbar ul li:hover::after {
 	width: 100%;
 }
-
+.uil-bars{
+	color: var(--color-dark-text);
+}
 .waves {
 	position: absolute;
 	bottom: 0;
